@@ -164,6 +164,16 @@ YAML的語法和其他高階語言類似，並且可以簡單表達清單、雜�
 看看人家  [維基](https://zh.wikipedia.org/wiki/YAML#%E8%AA%9E%E8%A8%80%E7%9A%84%E6%A7%8B%E6%88%90%E5%85%83%E7%B4%A0)  寫得多好。
 
 新增dashboard功能:
+-
+我高興到落淚，如果你不知道我落淚的原因，我卡在dashboard卡了快一個禮拜，但我終於OK了。
+```
+在瀏覽器輸入:
+<IP address>:<Port> (教學裡都有)
+但是!但是!! 問題來了 Client sent an HTTP request to an HTTPS server.
+其實只要把前面預設的，http改成https就好了。
+全文:
+https://<IP address>:<Port>
+```
 
 
 
