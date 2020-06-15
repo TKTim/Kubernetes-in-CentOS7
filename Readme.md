@@ -175,6 +175,50 @@ YAML的語法和其他高階語言類似，並且可以簡單表達清單、雜�
 https://<IP address>:<Port>
 ```
 
+解剖pod身分證，yaml檔案
+=
+```
+apiVersion: v1
+ kind: Pod
+ metadata:
+   name: kubernetes-demo-pod
+   labels:
+     app: demoApp
+ spec:
+   containers:
+     - name: kubernetes-demo-container
+       image: hcwxd/kubernetes-demo
+       ports:
+         - containerPort: 3000
+```
+
+### apiVersion
+```
+該元件的版本號
+```
+
+### kind
+```
+該元件是什麼屬性，常見有 Pod、Node、Service、Namespace、ReplicationController 等
+```
+### metadata
+```
+name
+指定該 Pod 的名稱
+labels
+指定該 Pod 的標籤，這裡我們暫時幫它上標籤為 app: demoApp
+```
+### spec
+```
+。container.name
+指定運行出的 Container 的名稱
+。container.image
+指定 Container 要使用哪個 Image，這裡會從 DockerHub 上搜尋
+。container.ports
+指定該 Container 有哪些 port number 是允許外部資源存取
+```
+<p style="color:blue;">本章取自於:<a href="https://medium.com/@C.W.Hu/kubernetes-implement-ingress-deployment-tutorial-7431c5f96c3e " style="color:blue;">Kubernetes 基礎教學 </a></p>
+
 
 
 
