@@ -162,6 +162,7 @@ YAML
 YAML的語法和其他高階語言類似，並且可以簡單表達清單、雜湊表，純量等資料形態。它使用空白符號縮排和大量依賴外觀的特色，特別適合用來表達或編輯資料結構、各種設定檔、傾印除錯內容、檔案大綱（例如：許多電子郵件標題格式和YAML非常接近）。儘管它比較適合用來表達階層式（hierarchical model）的資料結構，不過也有精緻的語法可以表示關聯性（relational model）的資料。[5]由於YAML使用空白字元和分行來分隔資料，使得它特別適合用grep／Python／Perl／Ruby操作。其讓人最容易上手的特色是巧妙避開各種封閉符號，如：引號、各種括號等，這些符號在巢狀結構時會變得複雜而難以辨認。
 ```
 看看人家  [維基](https://zh.wikipedia.org/wiki/YAML#%E8%AA%9E%E8%A8%80%E7%9A%84%E6%A7%8B%E6%88%90%E5%85%83%E7%B4%A0)  寫得多好。
+這裡有教你怎麼寫  [參考](https://chusiang.github.io/ansible-docs-translate/YAMLSyntax.html)
 
 新增dashboard功能:
 -
@@ -218,6 +219,17 @@ labels
 指定該 Container 有哪些 port number 是允許外部資源存取
 ```
 <p style="color:blue;">本章取自於:<a href="https://medium.com/@C.W.Hu/kubernetes-implement-ingress-deployment-tutorial-7431c5f96c3e " style="color:blue;">Kubernetes 基礎教學 </a></p>
+
+Some cool move I will say.
+=
+### 進入 pods中
+```
+# kubectl exec -it <pod name> sh
+```
+![ijm]()
+後面可以看到我已經進入容器內了
+
+
 
 
 
