@@ -227,6 +227,7 @@ Some cool move I will say.
 # kubectl exec -it <pod name> sh
 ```
 ![img6](https://github.com/TKTim/Kubernetes-in-CentOS7/blob/master/01.png)
+
 後面可以看到我已經進入容器內了
 
 
